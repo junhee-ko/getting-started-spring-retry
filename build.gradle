@@ -22,6 +22,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.jetbrains.kotlin:kotlin-reflect'
     implementation 'org.springframework.retry:spring-retry'
+    implementation 'org.springframework.boot:spring-boot-starter-aop' // The declarative approach to applying retry handling by using the @Retryable annotation shown earlier has an additional runtime dependency on AOP classes that need to be declared in your project.
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
